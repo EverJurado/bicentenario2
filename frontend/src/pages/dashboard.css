@@ -1,0 +1,80 @@
+.dashboard-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: #27ae60;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar */
+.dashboard-wrapper .sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.dashboard-wrapper .sidebar-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.dashboard-wrapper .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard-wrapper .menu-item {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.dashboard-wrapper .menu-item:hover {
+  background-color: #34495e;
+}
+
+/* Main Content */
+.dashboard-wrapper .main-content {
+  flex: 1;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.dashboard-wrapper .main-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.dashboard-wrapper .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dashboard-wrapper .card {
+  background-color: white;
+  color: #2c3e50;
+  padding: 20px;
+  border-radius: 12px;
+  width: calc(33.333% - 20px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.dashboard-wrapper .card h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .dashboard-wrapper .card {
+    width: 100%;
+  }
+
+  .dashboard-wrapper .main-title {
+    font-size: 28px;
+  }
+}

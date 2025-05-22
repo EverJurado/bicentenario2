@@ -1,0 +1,77 @@
+.form-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.form {
+    background: linear-gradient(to bottom right, #ffa500, #008000);
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 500px;
+    margin: 2rem auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.input-container {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container input,
+.input-container select,
+.input-container textarea {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.input-container label {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #fff;
+}
+
+.input-container select[multiple] {
+    height: 120px;
+    background-color: #fff;
+}
+
+.submit {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #006400;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit:hover {
+    background-color: #004d00;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}

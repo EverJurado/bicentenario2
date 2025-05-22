@@ -1,0 +1,63 @@
+/* agenda.css */
+.agenda-page {
+  padding: 2rem;
+  background: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  min-height: 100vh;
+}
+
+.agenda-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #b22222; /* rojo Bicentenario */
+}
+
+.agenda-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.agenda-item {
+  background-color: #fff;
+  border-left: 6px solid #228b22; /* verde Bicentenario */
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.agenda-item:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.agenda-item strong {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.agenda-info {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.agenda-cost {
+  font-weight: bold;
+  color: #ffbf00; /* amarillo Bicentenario */
+}
+
+@media (max-width: 600px) {
+  .agenda-item {
+    padding: 1rem;
+  }
+
+  .agenda-title {
+    font-size: 1.5rem;
+  }
+}

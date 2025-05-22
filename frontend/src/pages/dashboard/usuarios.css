@@ -1,0 +1,52 @@
+.usuarios-wrapper {
+  padding: 40px;
+  color: white;
+}
+
+.usuarios-wrapper h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.usuarios-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.usuarios-listas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.bloque {
+  background-color: white;
+  color: #2c3e50;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bloque h2 {
+  margin-top: 0;
+}
+
+.bloque ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.bloque li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.grafico {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  max-width: 400px;
+}

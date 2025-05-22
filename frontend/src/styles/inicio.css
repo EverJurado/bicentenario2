@@ -1,0 +1,74 @@
+.inicio-container {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #e3f2fd, #bbdefb, #90caf9);
+    animation: fondoMovimiento 15s infinite alternate;
+}
+
+.fondo-degradado {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(130deg, #c5cae9, #e8eaf6, #f3e5f5);
+    opacity: 0.6;
+    background-size: 300% 300%;
+    animation: fondoDegradado 12s ease infinite;
+    z-index: 0;
+}
+
+@keyframes fondoDegradado {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.contenido-inicio {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.logo-inicio {
+    width: 180px;
+    margin-bottom: 1.2rem;
+}
+
+.titulo-inicio {
+    font-size: 2.8rem;
+    color: #0d47a1;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.subtitulo-inicio {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.boton-chat {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-chat:hover {
+    background-color: #0d47a1;
+}
+
+@keyframes fondoMovimiento {
+    from { background-position: 0% 0%; }
+    to { background-position: 100% 100%; }
+}

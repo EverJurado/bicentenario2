@@ -1,0 +1,61 @@
+:root {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #f7f7f7; /* Fondo gris claro para un contraste suave */
+}
+
+/* Estilo global de márgenes, padding y box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Centro de la página */
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo del formulario con fondo y bordes suaves */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  background: #ffffff; /* Fondo blanco para resaltar el formulario */
+  padding: 40px;
+  border-radius: 15px; /* Bordes más suaves */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo de la barra de menú */
+.menu {
+  background-color: #9e2a2f; /* Rojo suave inspirado en la bandera de Bolivia */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+/* Estilo de los enlaces y botones del menú */
+.menu a,
+.menu button {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  font-family: 'Arial', sans-serif;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px; /* Bordes redondeados para un diseño más moderno */
+}
+
+/* Efecto hover para enlaces y botones */
+.menu a:hover,
+.menu button:hover {
+  background-color: #3c6e71; /* Verde suave inspirado en la bandera */
+  transition: background-color 0.3s ease;
+}

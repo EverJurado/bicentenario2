@@ -1,0 +1,58 @@
+/* Estilo general de los elementos del menú */
+.menu a, .logout-button, .dropdown-toggle {
+  text-decoration: none;
+  color: #ffffff; /* Blanco neutro */
+  padding: 10px 15px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Estilo de los elementos cuando se pasa el mouse sobre ellos */
+.menu a:hover, .logout-button:hover, .dropdown-toggle:hover {
+  background-color: #3c6e71; /* Color suave y sobrio, relacionado con el verde */
+  border-radius: 5px;
+}
+
+/* Estilo del contenedor del menú desplegable */
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Botón que activa el menú, con un toque sobrio y elegante */
+.dropdown-toggle {
+  background-color: #9e2a2f; /* Rojo suave, inspirando la bandera de Bolivia */
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-weight: bold;
+}
+
+/* Lista desplegable que aparece cuando se activa el botón */
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #ffffff; /* Fondo blanco para contraste limpio */
+  color: #2f4f4f; /* Texto en gris oscuro para legibilidad */
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15); /* Sombra sutil */
+  list-style: none;
+  padding: 10px 0;
+  width: 150px;
+  z-index: 10;
+}
+
+/* Opciones dentro del menú */
+.dropdown-menu li {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo cuando se pasa el mouse sobre las opciones del menú */
+.dropdown-menu li:hover {
+  background-color: #f1c40f; /* Color amarillo suave (también puede recordar la bandera de Bolivia) */
+}
